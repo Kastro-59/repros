@@ -51,6 +51,21 @@
 </div>
 </head>
 <body>
+  <script src="https://kastro-59.github.io/repros/jquery.ripples.js"></script>
+  <script>
+$(document).ready(function() {
+  try {
+    $('.a,.b,.c').ripples({
+      resolution: 256,
+      dropRadius: 20,
+      perturbance: 0.04
+    });
+  }
+  catch (e) {
+    $('.error').show().text(e);
+  }
+});
+</script>
 <script> jQuery(document).octoberLeaves() </script>
  <script type="text/javascript">
 
