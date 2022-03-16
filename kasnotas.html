@@ -32,7 +32,30 @@
      -webkit-transform: translateZ(0);
      -moz-transform: translateZ(0);
      transform: translateZ(0);
-  }</style>
+  }
+   .data {
+     position: absolute;
+     font-family: 'Chela One', cursive;
+     font-size: 15px;
+     left: 235px;
+     top: 40px;
+     color: #fa225b;
+     width: 236px;
+     height: 19px;
+     z-index: 16;
+     border: 1px;
+  }
+   #Clock {
+     position: absolute;
+     top: 60px;
+     left: 353px;
+     width: 43px;
+     color: #fa225b;
+     font-family: 'Chela One', cursive;
+     font-size: 15px;
+  }
+
+</style>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src="https://kastro-59.github.io/repros/kasradio.js"></script>
 <script src="https://kastro-59.github.io/repros/rotate3Di.js"></script>
@@ -51,6 +74,67 @@
 </div>
 </head>
 <body>
+  </script>
+&nbsp;&nbsp; <span id="Clock">12:57:05</span>
+
+
+<script language="JavaScript">
+<!--
+var Elem = document.getElementById("Clock");
+function Horario(){
+var Hoje = new Date();
+var Horas = Hoje.getHours();
+if(Horas < 10){
+Horas = "0"+Horas;
+}
+var Minutos = Hoje.getMinutes();
+if(Minutos < 10){
+Minutos = "0"+Minutos;
+}
+var Segundos = Hoje.getSeconds();
+if(Segundos < 10){
+Segundos = "0"+Segundos;
+}
+Elem.innerHTML = Horas+":"+Minutos+":"+Segundos;
+}
+window.setInterval("Horario()",1000);
+//-->
+</script>
+<div id="data" class="data">
+<script language="javascript">
+
+var fecha=new Date();
+var diames=fecha.getDate();
+var diasemana=fecha.getDay();
+var mes=fecha.getMonth() +1 ;
+var ano=fecha.getFullYear();
+
+var textosemana = new Array (7);
+textosemana[0]="Dom";
+textosemana[1]="Lun";
+textosemana[2]="Mar";
+textosemana[3]="Mie";
+textosemana[4]="Jue";
+textosemana[5]="Vie";
+textosemana[6]="Sab";
+
+var textomes = new Array (12);
+textomes[1]="Ene";
+textomes[2]="Feb";
+textomes[3]="Mar";
+textomes[4]="Abr";
+textomes[5]="May";
+textomes[6]="Jun";
+textomes[7]="Jul";
+textomes[8]="Ago";
+textomes[9]="Sep";
+textomes[10]="Oct";
+textomes[11]="Nov";
+textomes[12]="Dic";
+
+document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[mes] + " de " + ano + "<br>");
+
+</script>
   <script src="https://kastro-59.github.io/repros/jquery.ripples.js"></script>
   <script>
 $(document).ready(function() {
