@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>kasnotas</title>
+<title>CDFSUR</title>
 <style>
  body { margin: 0; }
  div {
@@ -14,17 +14,52 @@
 	top: 0;
 	right: 50%;
 	bottom: 50%;
-	width:450px; 
-	height:389px;
+	width:420px; 
+	height:364px;
 	background-size: cover;
  }
+
+  .disc{
+  width: 364px;            
+  height: 364px;          
+  background: url(https://i.imgur.com/RlQXk8S.png)center no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -10;
+  overflow: hidden;
+  left: 45px;
+  top: 0px;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+   animation: spin 6s linear infinite;
+  z-index: -6;
+  
+   }
+   }
+
+    @-moz-keyframes spin {
+    100% {
+     -moz-transform: rotate(360deg);
+   }
+   }
+   @-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+   }
+   @keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+   }
    .data {
      position: absolute;
      font-family: 'Chela One', cursive;
      font-size: 15px;
-     left: 235px;
-     top: 40px;
-     color: #b4b0b0;
+     left: 120px;
+     top: 15px;
+     color: #ffffff;
      width: 236px;
      height: 19px;
      z-index: 16;
@@ -32,17 +67,17 @@
   }
    #Clock {
      position: absolute;
-     top: 60px;
-     left: 353px;
+     top: 35px;
+     left: 200px;
      width: 43px;
-     color: #b4b0b0;
+     color: #ffffff;
      font-family: 'Chela One', cursive;
      font-size: 15px;
   }
 
 </style>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="https://kastro-59.github.io/Kascres/kasradio.js"></script>
+<script src="https://kastro-59.github.io/Kastro/kasunaradioFinal.js" ></script>
 <center>
  <style> 
    <!-- 
@@ -52,12 +87,14 @@
 </center> 
 <div align="center">
  <div class="player" id="miplayer">
- <div class="a" style="background-image:url(https://i.imgur.com/C90tzS0.png)">
- <div id="kastroplayer" style="width:450px; height:389px;background: transparent url() bottom / cover no-repeat;">loading...</div>	
+ <div class="a" style="background-image:url(https://i.imgur.com/zUHMKoa.png)">
+
+ <div id="kastroplayer" style="width:420px; height:364px;background: transparent url() bottom / cover no-repeat;">loading...</div>	
+ 
+ <div class="disc">  
 </div>
 </head>
 <body>
-  </script>
 &nbsp;&nbsp; <span id="Clock">12:57:05</span>
 
 
@@ -117,8 +154,8 @@ textomes[12]="Dic";
 
 document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[mes] + " de " + ano + "<br>");
 
-</script>
-  <script src="https://kastro-59.github.io/repros/jquery.ripples.js"></script>
+</script><br><br><br><br><br><br><br>
+<script src="https://kastro-59.github.io/repros/jquery.ripples.js"></script>
   <script>
 $(document).ready(function() {
   try {
@@ -134,7 +171,46 @@ $(document).ready(function() {
 });
 </script>
 
-<script src="https://kastro-59.github.io/repros/kastroplayersur.js">
-</script>
-</body>
-</html>
+  <script>
+  $("#kastroplayer").kasunaradio({
+  userinterface: "big",
+  backgroundcolor: "transparent",
+  fontcolor: "#ffffff",
+  hightlightcolor: "#fa225b",
+  fontname: "Saira Condensed",
+  googlefont: "Saira+Condensed:wght@100",
+  fontratio: "0.5",
+  radioname: "Desafio del Sur",
+  scroll: "false",
+  coverimage: "https://i.imgur.com/TSc5ws2.gif",
+  usevisualizer: "fake",
+  coverstyle: "animated",
+  visualizertype: "4",
+  multicolorvisualizer: "true",
+    color1: "#f6f6f6",
+    color2: "#323edd",
+    color3: "#fc5404",
+    color4: "#fa225b",
+  itunestoken: "1000lIPN",
+  metadatatechnic: "",
+  ownmetadataurl: "",
+  streamurl: "https://stream.zeno.fm/ddqxfkh63hhvv.aac",
+  streamtype: "radiozeno",
+  icecastmountpoint: "/radio.mp3",
+  radionomyid: "",
+  radionomyapikey: "",
+  radiozenoid: "ddqxfkh63hhvv",
+  radiojarid: "",
+  radiocoid: "",
+  shoutcastpath: "/stream",
+  shoutcastid: "1",
+  streamsuffix: "",
+  metadatainterval: "5000",
+  volume: "50",
+  debug: "false",
+  usestreamcorsproxy: "false", 
+  corsproxy: "",
+  autoplay:"true",
+    });
+</script>         
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
