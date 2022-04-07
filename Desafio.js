@@ -34,7 +34,7 @@ $("#kastroplayer").kasunaradio({
   metadatainterval: "5000",
   volume: "50",
   debug: "false",
-  usestreamcorsproxy: "true", 
+  usestreamcorsproxy: "false", 
   corsproxy: "",
   autoplay:"true",
     });
