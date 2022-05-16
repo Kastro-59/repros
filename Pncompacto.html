@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +22,7 @@
   .disc{
   width: 316px;            
   height: 323px;          
-  background: url(https://i.imgur.com/zUNGKef.png)center no-repeat;
+  background: url(https://i.imgur.com/xWHGjvg.png)center no-repeat;
   background-size: cover;
   position: absolute;
   z-index: -10;
@@ -156,6 +155,21 @@ textomes[12]="Dic";
 document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[mes] + " de " + ano + "<br>");
 
 </script><br><br><br><br><br><br><br>
+<script src="https://kastro-59.github.io/repros/jquery.ripples.js"></script>
+  <script>
+$(document).ready(function() {
+  try {
+    $('.a,.b,.c').ripples({
+      resolution: 256,
+      dropRadius: 20,
+      perturbance: 0.04
+    });
+  }
+  catch (e) {
+    $('.error').show().text(e);
+  }
+});
+</script>
   <script>
   $("#kastroplayer").kasunaradio({
   userinterface: "big",
@@ -190,7 +204,7 @@ document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[me
   shoutcastpath: "/stream",
   shoutcastid: "1",
   streamsuffix: "",
-  metadatainterval: "8000",
+  metadatainterval: "10000",
   volume: "50",
   debug: "false",
   usestreamcorsproxy: "false", 
