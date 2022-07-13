@@ -68,6 +68,9 @@
 	overflow: hidden;
 	left: 236px;
 	top: 13px;
+	-webkit-animation: spin 3s linear infinite;
+  	-moz-animation: spin 3s linear infinite;
+ 	 animation: spin 3s linear infinite;
 	box-shadow: 0 0 5px #,
    0 0 25px #,
    0 0 50px #,
@@ -109,9 +112,9 @@
 	overflow: hidden;
 	left: 234px;
 	top: 11px;
-  	-webkit-animation: spin 6s linear infinite;
-  	-moz-animation: spin 6s linear infinite;
- 	 animation: spin 6s linear infinite;
+  	-webkit-animation: spin 3s linear infinite;
+  	-moz-animation: spin 3s linear infinite;
+ 	 animation: spin 3s linear infinite;
 	z-index: -6;
 	
    }
@@ -929,14 +932,14 @@ document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[me
         var settings = $.extend({
             // Default Settings
             URL: "",
-	    version: "2",
+			version: "2",
             stream_id: 1,
-	    mount_point: "", //For Icecast server
-	    type: "/;type=mp3",
+			mount_point: "", //For Icecast server
+			type: "/;type=mp3",
             streampath: "/stream?icy=http",
-	    cors: "",
+			cors: "",
             logo: "img/logo.png",
-	    servertitle: "My Radio Title", //For Shoutcast v2 server
+			servertitle: "My Radio Title", //For Shoutcast v2 server
             show_listeners: true,    
             src: "",
             volume: 1,			
