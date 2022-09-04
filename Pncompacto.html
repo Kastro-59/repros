@@ -198,4 +198,19 @@ document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[me
     });
 </script>         
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+	<script language="JavaScript" type="text/javascript">
+    function click(){
+    if(event.button==2){
+    alert('player protected');
+    }
+    }
+    document.onmousedown=click
+    //-->
+    </script>
+	<!-- EVITAR CLICK DERECHO-->
+	<script language="Javascript">
+<!-- Begin
+document.oncontextmenu = function(){return false}
+// End -->
+</script>
 </body>
