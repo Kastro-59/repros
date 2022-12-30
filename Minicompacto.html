@@ -70,7 +70,7 @@
 	-webkit-animation: spin 1s linear infinite;
   	-moz-animation: spin 1s linear infinite;
  	 animation: spin 1s linear infinite;
-	top: 6px;
+	top: 7px;
 	box-shadow: 0 0 5px #,
    0 0 25px #,
    0 0 50px #,
@@ -138,8 +138,8 @@
    }
 	
   .Kastrostreaming .album-cover1 {
-	width: 252px;
-	height: 252px;
+	width: 275px;
+	height: 262px;
 	background:url() center no-repeat ;
 	background-size: cover;
 	position: absolute;
@@ -151,7 +151,7 @@
 	-moz-box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.6);
 	box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.6);
 	z-index: -11;
-	left: 31px;
+	left: 30px;
 	box-shadow: 0 0 5px #,
    0 0 25px #180df8,
    0 0 50px #d2e40e,
@@ -1423,7 +1423,21 @@ document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[me
     };
 
 })(jQuery);</script>
-
+<script language="JavaScript" type="text/javascript">
+    function click(){
+    if(event.button==2){
+    alert('Copyright Protected Player');
+    }
+    }
+    document.onmousedown=click
+    //-->
+    </script>
+	<!-- EVITAR CLICK DERECHO-->
+	<script language="Javascript">
+<!-- Begin
+document.oncontextmenu = function(){return false}
+// End -->
+</script>
 <div id="Cgatatrans"></div>
 <script>
 $("#stream1").icast({
