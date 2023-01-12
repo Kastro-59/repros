@@ -341,8 +341,8 @@ var Ripples = function (el, options) {
 Ripples.DEFAULTS = {
 	imageUrl: null,
 	resolution: 256,
-	dropRadius: 20,
-	perturbance: 0.53,
+	dropRadius: 40,
+	perturbance: 2.53,
 	interactive: true,
 	crossOrigin: ''
 };
@@ -361,7 +361,7 @@ Ripples.prototype = {
 			if (pointerEventsEnabled()) {
 				that.dropAtPointer(
 					pointer,
-					that.dropRadius * (big ? 2.5 : 2),
+					that.dropRadius * (big ? 7.5 : 7),
 					(big ? 2.14 : 2.01)
 				);
 			}
@@ -395,7 +395,7 @@ Ripples.prototype = {
 
 		var newImageSource = this.imageUrl ||
 			extractUrl(this.originalCssBackgroundImage) ||
-			extractUrl(this.$el.css('backgroundImage=https://i.imgur.com/V5YXeBD.png'));
+			extractUrl(this.$el.css('backgroundImage'));
 
 		// If image source is unchanged, don't reload it.
 		if (newImageSource == this.imageSource) {
