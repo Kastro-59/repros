@@ -164,7 +164,21 @@ $(document).ready(function() {
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();</script>
-
+<script language="JavaScript" type="text/javascript">
+    function click(){
+    if(event.button==2){
+    alert('Copyright Protected Player');
+    }
+    }
+    document.onmousedown=click
+    //-->
+    </script>
+	<!-- EVITAR CLICK DERECHO-->
+	<script language="Javascript">
+<!-- Begin
+document.oncontextmenu = function(){return false}
+// End -->
+</script>
   <script>
   $("#kastroplayer").kasunaradio({
   userinterface: "big",
