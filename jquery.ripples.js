@@ -341,8 +341,8 @@ var Ripples = function (el, options) {
 Ripples.DEFAULTS = {
 	imageUrl: null,
 	resolution: 256,
-	dropRadius: 40,
-	perturbance: 2.53,
+	dropRadius: 20,
+	perturbance: 0.03,
 	interactive: true,
 	crossOrigin: ''
 };
@@ -361,8 +361,8 @@ Ripples.prototype = {
 			if (pointerEventsEnabled()) {
 				that.dropAtPointer(
 					pointer,
-					that.dropRadius * (big ? 7.5 : 7),
-					(big ? 2.14 : 2.01)
+					that.dropRadius * (big ? 1.5 : 1),
+					(big ? 0.14 : 0.01)
 				);
 			}
 		}
