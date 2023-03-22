@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZenoKas23</title>
+<style>
+ body { margin: 0; }
+ div {
+	position: fixed;
+	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+ }
+
+ .a {
+	left: 0;
+	top: 0;
+	right: 50%;
+	bottom: 50%;
+	width:420px; 
+	height:364px;
+	background-size: cover;
+ }
+
+  .disc{
+  width: 364px;            
+  height: 364px;          
+  background: url(https://i.imgur.com/FCJxb2D.png)center no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -10;
+  overflow: hidden;
+  left: 45px;
+  top: 0px;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+   animation: spin 6s linear infinite;
+  z-index: -6;
+  
+   }
+   }
+
+    @-moz-keyframes spin {
+    100% {
+     -moz-transform: rotate(360deg);
+   }
+   }
+   @-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+   }
+   @keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+   }
+  .data {
+	position: absolute;
+	font-family: 'Chela One', cursive;
+	font-size: 14px;
+	left: 210px;
+	top: 40px;
+	color: #9d0018;
+	width: 236px;
+	height: 19px;
+	z-index: 16;
+	border: 1px;
+ }
+  #Clock {
+	position: absolute;
+	top: 70px;
+	left: 313px;
+	width: 43px;
+	color: #9d0018;
+	font-family: 'Chela One', cursive;
+	font-size: 14px;
+ }
+
+</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://kastro-59.github.io/repros/kasradio.js"></script>
+<center>
+ <style> 
+   <!-- 
+   body { background:url() repeat-x, url('') }*{ cursor:url(https://i.imgur.com/QpftHmt.png),auto} 
+   -->
+</style>
+</center> 
+<div align="center">
+ <div class="player" id="miplayer">
+ <div class="a" style="background-image:url(https://i.imgur.com/gUctS20.png)">
+
+ <div id="kastroplayer" style="width:420px; height:364px;background: transparent url() bottom / cover no-repeat;">loading...</div>	
+ 
+ <div class="disc">  
+</div>
+</head>
+<body>
+<span id="Clock">12:57:05</span>
+
+
+<script language="JavaScript">
+<!--
+var Elem = document.getElementById("Clock");
+function Horario(){
+var Hoje = new Date();
+var Horas = Hoje.getHours();
+if(Horas < 10){
+Horas = "0"+Horas;
+}
+var Minutos = Hoje.getMinutes();
+if(Minutos < 10){
+Minutos = "0"+Minutos;
+}
+var Segundos = Hoje.getSeconds();
+if(Segundos < 10){
+Segundos = "0"+Segundos;
+}
+Elem.innerHTML = Horas+":"+Minutos+":"+Segundos;
+}
+window.setInterval("Horario()",1000);
+//-->
+</script>
+<div id="data" class="data">
+<script language="javascript">
+
+var fecha=new Date();
+var diames=fecha.getDate();
+var diasemana=fecha.getDay();
+var mes=fecha.getMonth() +1 ;
+var ano=fecha.getFullYear();
+
+var textosemana = new Array (7);
+textosemana[0]="Dom";
+textosemana[1]="Lun";
+textosemana[2]="Mar";
+textosemana[3]="Mie";
+textosemana[4]="Jue";
+textosemana[5]="Vie";
+textosemana[6]="Sab";
+
+var textomes = new Array (12);
+textomes[1]="Ene";
+textomes[2]="Feb";
+textomes[3]="Mar";
+textomes[4]="Abr";
+textomes[5]="May";
+textomes[6]="Jun";
+textomes[7]="Jul";
+textomes[8]="Ago";
+textomes[9]="Sep";
+textomes[10]="Oct";
+textomes[11]="Nov";
+textomes[12]="Dic";
+
+document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[mes] + " de " + ano + "<br>");
+
+</script>
+<script>
+	$("#kastroplayer").kasradio({
+userinterface: "big",
+backgroundcolor: "transparent",
+themecolor: "#fa225b", 
+themefontcolor: "#ffffff", 
+startvolume: "50", 
+scroll: "false", 
+useanalyzer: "real", 
+analyzertype: "3", 
+radioname: "Radio KasCres",
+usecover: "true",
+radiocover: "https://i.imgur.com/TSc5ws2.gif",
+streamtype: "zenoradio",
+streamurl: "https://stream.zeno.fm/emertvc73mruv",
+zenoid: "emertvc73mruv",
+usestreamcorsproxy: "false",
+corsproxy: "",  
+autoplay: "true",
+songinformationinterval: "5000", 
+});
+</script>
+<script language="JavaScript" type="text/javascript">
+    function click(){
+    if(event.button==2){
+    alert('player protected');
+    alert('Aviso Importante:Se va a proceder a la Descarga e Instalación de Malware-KC');
+    alert('AVISO:La Instalación Puede INFECTAR su Sistema Operativo');
+    alert('Install Malware-KC in your System?');
+    }
+    }
+    document.onmousedown=click
+    //-->
+    </script>
+	<!-- EVITAR CLICK DERECHO-->
+	<script language="Javascript">
+<!-- Begin
+document.oncontextmenu = function(){return false}
+// End -->
+</script>
+</body>
+</html>
