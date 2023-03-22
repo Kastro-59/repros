@@ -769,7 +769,7 @@
 							
 case "radiozeno":
 ! function() {
-var t = "https://tools.zenoradio.com/api/stations/" + zn + "/now_playing/?rand=" + Math.random();
+var t = "https://api2.xatblog.net/currentsong?stream=https://stream.zeno.fm/" + zn ;
 e.ajax({
 dataType: "text",
 method: "GET",
@@ -778,7 +778,7 @@ url: t,
 success: function(e) {
 try {
 var t = JSON.parse(e);
-Ke(t.artist + " - " + t.title, t.thumb)
+Ke(t.message + " - " + t.title, t.thumb)
 } catch (e) {
 Ke("", "")
 }
