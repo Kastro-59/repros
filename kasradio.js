@@ -486,7 +486,7 @@ width: "60px",
 overflow: "hidden",
 "border-radius": "50%",
 border: "2px solid " + J,
-bottom: "20px",
+bottom: "10px",
 cursor: "pointer",
 "background-color": m
 }) : a("#" + b + "playstopcontainer").css({
@@ -518,7 +518,7 @@ fill: J
 top: "20px",
 left: "20px",
 right: "20px",
-bottom: "20px"
+bottom: "10px"
 });
 fb = document.createElement("div");
 fb.id = b + "stopbutton";
@@ -533,7 +533,7 @@ fill: J
 top: "20px",
 left: "20px",
 right: "20px",
-bottom: "20px"
+bottom: "10px"
 });
 O = new Audio;
 O.id = b + "html5audio";
