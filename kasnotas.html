@@ -849,7 +849,7 @@
 							
 case "radiozeno":
 ! function() {
-var t = "https://api2.xatblog.net/currentsong?stream=https://stream.zeno.fm/" + zn ;
+var t = "https://api.streamafrica.net/zeno/index.php?z=" + zn ;
 e.ajax({
 dataType: "text",
 method: "GET",
@@ -858,7 +858,7 @@ url: t,
 success: function(e) {
 try {
 var t = JSON.parse(e);
-Ke(t.message + " - " + t.title, t.thumb)
+Ke(t.currentArtist + " - " + t.currentSong  + t.title, t.thumb)
 } catch (e) {
 Ke("", "")
 }
@@ -2545,7 +2545,7 @@ document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[me
     color4: "#fa225b",
   itunestoken: "1000lIPN",
   metadatatechnic: "",
-  ownmetadataurl: "https://api2.xatblog.net/currentsong?stream=https://stream.zeno.fm/6pfcuhe0mwzuv",
+  ownmetadataurl: "",
   streamurl: "https://stream.zeno.fm/6pfcuhe0mwzuv",
   streamtype: "radiozeno",
   icecastmountpoint: "/radio.mp3",
@@ -2560,7 +2560,7 @@ document.write("" + textosemana[diasemana] + " " + diames + " de " + textomes[me
   metadatainterval: "5000",
   volume: "50",
   debug: "false",
-  usestreamcorsproxy: "true", 
+  usestreamcorsproxy: "false", 
   corsproxy: "",
   autoplay:"true",
     });
