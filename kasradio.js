@@ -1925,13 +1925,13 @@ a.ajax({
 type: "GET",
 crossDomain: !0,
 cache: !1,
-url: "https://api2.xatblog.net/currentsong?stream=https://stream.zeno.fm/" + Bc ,
+url: "https://api.streamafrica.net/zeno/index.php?z=" + Bc ,
 dataType: "json",
 async: !0,
 success: function(a) {
 if (a) try {
-var b = a.message + " - " + a.title;
-v != b && (v = b, ya(), "small" == y ? P() : (M = a.message, N = a.title, l(), H()))
+var b = a.currentSong +  " - " + a.title;
+v != b && (v = b, ya(), "small" == y ? P() : (M = a.currentSong +  " - " + a.currentArtist, N = a.title, l(), H()))
 } catch (A) {}
 },
 error: function(a, b, c) {}
