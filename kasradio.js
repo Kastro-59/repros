@@ -1930,8 +1930,8 @@ dataType: "json",
 async: !0,
 success: function(a) {
 if (a) try {
-var b = a.currentSong +  " - " + a.title;
-v != b && (v = b, ya(), "small" == y ? P() : (M = a.currentSong +  " - " + a.currentArtist, N = a.title, l(), H()))
+var b = a.currentArtist +  " - " + a.currentSong +  "  " + a.title;
+v != b && (v = b, ya(), "small" == y ? P() : (M = a.currentArtist +  " - " + a.currentSong , N = a.title, l(), H()))
 } catch (A) {}
 },
 error: function(a, b, c) {}
