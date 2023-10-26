@@ -1,4 +1,4 @@
 $("#stream1").icast({
-URL: "https://sbox2.sonybox.es:9048",
+URL: "https://app.sonicpanelradio.com:8130",
 version: "2",
 })
