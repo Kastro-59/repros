@@ -1,4 +1,4 @@
 $("#stream1").icast({
-URL: "https://s01.digitalserver.org:8166",
+URL: "https://sonic.sistemahost.es:8048",
 version: "2",
 })
