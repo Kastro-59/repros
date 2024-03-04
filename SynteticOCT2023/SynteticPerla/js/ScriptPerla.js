@@ -1,4 +1,4 @@
 $("#stream1").icast({
-URL: "https://sonic.sistemahost.es:8048",
+URL: "https://streamssl.eu:2330",
 version: "2",
 })
